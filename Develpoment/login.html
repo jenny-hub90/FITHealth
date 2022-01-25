@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<title>FITHealth</title>
+	<link href="https://fonts.googleapis.com/css?family=Acme|Baloo+Bhai|Caveat|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<a class="skip-link" href="#main">Skip to main</a>
+</head>
+<body>
+	<div class="container">
+		<div class="sub-container">
+			<div class="banner-img">
+				<picture class="image">
+					<source media="(min-width:501px)" srcset="">
+						<source media="(max-width: 500px)" srcset="">
+							<img src="Images/woman-4618189__480.jpg"alt="login-image">
+				</picture>
+			</div>
+			<div class="login-form" id="login">
+				<div class="title">
+					login form
+				</div>
+				<div class="input-fields">
+					<label class="label">Username</label>
+					<input id="name1" type="text" class="input" required>
+				</div>
+				<div class="input-fields">
+					<label  class="label">Password</label>
+					<input id="pass1" type="password"class="input" required>
+				</div>
+				
+				<div class="btn">
+					<button onclick="login()">Login</button>
+					 <a href="#" onclick="toggle()">Register</a></p>
+				</div>
+
+
+				</div>
+
+				<div id="register" class="login-form">
+				<div class="title">
+					Register form
+				</div>
+				<div class="input-fields">
+					<label class="label">Username</label>
+					<input type="text" id="name" class="input" required>
+				</div>
+				<div class="input-fields">
+					<label class="label">Password</label>
+					<input type="password" id="pass" class="input" required>
+				</div>
+				<div class="input-fields">
+					<label class="label">Re-Enter Password</label>
+					<input id="repass" type="password"class="input" required>
+				</div>
+				
+				<div class="input-fields">
+					<label class="label">Email</label>
+					<input id="email" type="text" class="input" required>
+				</div>
+				<div class="btn">
+					<button onclick="register()">Register</button>
+					<p class="message">Already Registered? <a href="#" onclick="toggle()">Login</a></p>
+				</div>
+					
+				</div>
+			</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$('#register').hide()
+		function toggle(){
+			$('#login').toggle()
+			$('#register').toggle()
+		}
+
+
+		function register(){
+			const name = document.getElementById('name').value
+			const pass = document.getElementById('pass').value
+			const repass = document.getElementById('repass').value
+			const email = document.getElementById('email').value
+		if(!localStorage.getItem(name)){
+		if(pass==repass){
+			localStorage.setItem(name,pass)
+			alert('registered!! please login')
+			toggle()
+		}
+		else{
+			alert('password does not match')
+		}
+	}
+	else{
+		alert('user exists')
+		}
+	}
+
+
+	function login(){
+		const name = document.getElementById('name1').value
+		const pass = document.getElementById('pass1').value
+		if(localStorage.getItem(name)){
+			console.log(name)
+			var x = localStorage.getItem(name)
+		if(pass==x){
+			location.href = 'home.html'		
+		}
+		else{
+			alert('password incorrect')
+		}
+	}
+	else{
+		alert('user does not exists')
+		}
+	
+	}
+	</script>
+</body>
+</html>

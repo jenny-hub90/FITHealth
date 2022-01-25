@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;  
+    
+}
+
+.container{
+    height: 60%;
+    overflow: hidden;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+  }
+
+
+.navigation{
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.btn-toggle-nav {
+    width: 76px;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url('../Images/viber_image_2021-04-23_14-16-05.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-toggle-nav:hover {
+   opacity: 0.5;
+}
+
+
+.menu-btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: calc(94vh - 41px);
+    padding: 0 5px;
+    background-color:#212432;;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.menu-btn ul li {
+    line-height: 60px;
+    list-style: none;
+}
+
+ .menu-btn ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+ .menu-btn ul li a:hover{
+   background-color: #2ED2CF;
+
+}
+
+
+.navigation{
+    background-color: #ffff;
+    height:80px;
+    width:100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    top: 0;
+   
+}
+label.fit{
+    color: black;
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    width: 100px;
+    height: 38px;
+    left: 235px;
+    top: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.Logo{
+    position:fixed;
+    width: 115px;
+    height: 82px;
+    left: 99px;
+    top: -3px;
+    background-image: url(../Images/man-woman-fitness-silhouette-character-260nw-220016503.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100px;
+
+}
+#search{
+    width: 357px;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px;
+    background: #ffff;
+    position: fixed;
+    left:510px;
+    top:7px;
+    border: 1px solid #000000;
+    box-sizing: border-box; 
+
+}
+
+
+input [type=text]{
+    width:90%;
+    padding:12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-right:0;
+    border-radius:5px 0 0 5px;
+
+}
+
+input [type=submit]{
+    position: absolute;
+    padding:12px;
+    width:8%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-shadow: 0 0 1px #000;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-right: 0;
+    background: linear-gradient(#2ED2CF,#000);
+    border:1px solid #000;
+    /* background: url(../Images/search-solid.svg); */
+
+}
+
+input[type=submit]:hover{
+    background: linear-gradient(#fff);
+
+}
+
+input[type=text]:focus,input[type=submit]:focus{
+    outline:none;
+}
+
+.searchrec{
+    width: 53px;
+    height: 31px;
+    background: rgba(46,210,207,1);
+    opacity: 1;
+    position: absolute;
+    top: 23px;
+    left: 829px;
+    border: 1px solid rgba(0,0,0,1);
+    overflow: hidden;
+}
+
+.searchrec #btn{
+    width: 53px;
+    height: 31px;
+    background: rgba(46,210,207,1);
+}
+
+
+
+.container1{
+    height: 123%;
+    overflow: hidden;
+}
+
+.top{
+    width: 100%;
+    height: 991px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    overflow: hidden;
+
+}
+
+video{
+    width: 100%;
+}
+
+.container2{
+    
+    width:95%;
+    overflow : hidden;
+    margin: 43px 63px;
+    padding:12px 28px;
+       
+    
+    
+
+}
+ .b1{
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 941px;
+    left: 64px;
+    overflow: hidden;
+
+}
+
+.v1{
+    width: 431px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 941px;
+    left: 63px;
+    overflow: hidden;
+
+}
+ .b2{ 
+    width: 430px;
+    height: 612px;
+    background:  #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 941px;
+    left: 573px;
+    overflow: hidden;
+
+}
+
+.v2{
+    width: 430px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 941px;
+    left: 573px;
+    overflow: hidden;
+
+}
+.b3{
+    width: 430px;
+    height: 612px;
+    background:  #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 941px;
+    left: 1072px;
+    overflow: hidden;
+
+}
+
+.v3{
+    width: 430px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 941px;
+    left: 1072px;
+    overflow: hidden;
+
+}
+
+.conatiner3{
+    
+    width:95%;
+    overflow : hidden;
+    
+    margin: 43px 63px;
+    padding:12px 28px;
+    
+}
+.b4{
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 1608px;
+    left: 64px;
+    overflow: hidden;
+
+}
+
+.v4{
+    width: 431px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1608px;
+    left: 63px;
+    overflow: hidden;
+
+}
+.b5{
+    
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 1608px;
+    left: 573px;
+    overflow: hidden;
+
+}
+
+.v5{
+    width: 430px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1608px;
+    left: 573px;
+    overflow: hidden;
+
+}
+.b6{
+    
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 1608px;
+    left: 1072px;
+    overflow: hidden;
+
+
+}
+
+.v6{
+    width: 430px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 1608px;
+    left: 1072px;
+    overflow: hidden;
+
+
+}
+
+.container4{
+   
+        width:95%;
+        overflow : hidden;
+    
+        margin: 43px 63px;
+        padding:12px 28px;
+    
+
+}
+
+.b7{
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 2265px;
+    left: 64px;
+    overflow: hidden;
+
+}
+
+.v7{
+    width: 431px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2265px;
+    left: 63px;
+    overflow: hidden;
+
+}
+.b8{
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 2265px;
+    left: 573px;
+    overflow: hidden;
+
+}
+
+.v8{
+    width: 430px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2265px;
+    left: 573px;
+    overflow: hidden;
+
+}
+.b9{
+    width: 430px;
+    height: 612px;
+    background: #ffff;
+    opacity: 1;
+    position: absolute;
+    top: 2265px;
+    left: 1072px;
+    overflow: hidden;
+
+}
+
+.v9{
+    width: 430px;
+    height: 612px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2265px;
+    left: 1072px;
+    overflow: hidden;
+
+} 
+
+.side{
+    width: 412px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 44px;
+    left: 55px;
+    font-family: Roboto;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left
+}
+
+
+
+.middle{
+    width: 201px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 34px;
+    left: 715px;
+    font-family: Roboto;
+    font-size: 35px;
+    opacity: 1;
+    text-align: left;
+}
+
+.copyright{
+    width:21px;
+    height:20px;
+    position: absolute;
+    border:none;
+    outline: none;
+    background :white url(../Images/copyright-regular.svg);
+    background-size: 21px;
+    top:42px;
+    left:692px;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+ .Facebook{
+    width:23px;
+    height:25px;
+    position: absolute;
+    border:none;
+    outline: none;
+    background :white url(../Images/facebook-f-brands.svg);
+    background-size: 21px;
+    top:40px;
+    left:1026px;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.8sec;
+
+}
+
+.Instagram{
+    width:22px;
+    height:25px;
+    position: absolute;
+    border:none;
+    outline: none;
+    background :white url(../Images/instagram-brands.svg);
+    background-size: 21px;
+    top:40px;
+    left:1054px;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.8sec;
+
+}
+
+.Twitter{
+    width:21px;
+    height:22px;
+    position: absolute;
+    border:none;
+    outline: none;
+    background :white url(../Images/twitter-brands.svg);
+    background-size: 21px;
+    top:41px;
+    left:1081px;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.8sec;
+
+} 
+
+.nextside{
+    width: 339px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 44px;
+    left: 1244px;
+    font-family: Roboto;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 97px;
+    left: 0px;
+    top: 2934px;
+    overflow: hidden;
+    opacity: 1;
+    background: #212432; 
+        
+    
+    }
